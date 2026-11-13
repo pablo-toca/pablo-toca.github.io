@@ -93,3 +93,39 @@
   resize();
   if (!reduced) requestAnimationFrame(frame);
 })();
+
+// Cambio de idioma ES/EN: el texto en español está en el HTML y el inglés en data-en.
+(() => {
+  const btn = document.getElementById('lang');
+  const items = document.querySelectorAll('[data-en]');
+  const aria = document.querySelectorAll('[data-en-aria]');
+  const meta = document.querySelector('meta[name="description"]');
+  const text = {
+    es: { title: document.title, desc: meta.content },
+    en: {
+      title: 'Pablo Toca Gutiérrez · Biomedical Engineering',
+      desc: 'Portfolio of Pablo Toca Gutiérrez, Biomedical Engineering student at the University of Deusto.'
+    }
+  };
+
+  items.forEach(el => { el.dataset.es = el.innerHTML; });
+  aria.forEach(el => { el.dataset.esAria = el.getAttribute('aria-label'); });
+
+  function setLang(lang) {
+    items.forEach(el => { el.innerHTML = lang === 'en' ? el.dataset.en : el.dataset.es; });
+    aria.forEach(el => el.setAttribute('aria-label', lang === 'en' ? el.dataset.enAria : el.dataset.esAria));
+    document.documentElement.lang = lang;
+    document.title = text[lang].title;
+    meta.content = text[lang].desc;
+    btn.textContent = lang === 'en' ? 'ES' : 'EN';
+    btn.setAttribute('aria-label', lang === 'en' ? 'Cambiar a español' : 'Switch to English');
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+  }
+
+  let saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  const initial = saved || ((navigator.language || 'es').toLowerCase().startsWith('es') ? 'es' : 'en');
+  setLang(initial);
+
+  btn.addEventListener('click', () => setLang(document.documentElement.lang === 'en' ? 'es' : 'en'));
+})();
