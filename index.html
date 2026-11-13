@@ -14,98 +14,99 @@
 
 <header class="top">
   <a class="brand" href="#inicio">Pablo Toca</a>
-  <nav aria-label="Principal">
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#experiencia">Experiencia</a>
-    <a href="#formacion">Formación</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
+  <nav aria-label="Principal" data-en-aria="Main">
+    <a href="#sobre-mi" data-en="About">Sobre mí</a>
+    <a href="#experiencia" data-en="Experience">Experiencia</a>
+    <a href="#formacion" data-en="Education">Formación</a>
+    <a href="#proyectos" data-en="Projects">Proyectos</a>
+    <a href="#contacto" data-en="Contact">Contacto</a>
+    <button type="button" id="lang" class="lang" aria-label="Switch to English">EN</button>
   </nav>
 </header>
 
 <main>
   <section class="hero" id="inicio">
     <h1>Pablo Toca Gutiérrez</h1>
-    <p class="lead">Estudio Ingeniería Biomédica en la Universidad de Deusto y trabajo como becario en su laboratorio de biotecnología.</p>
+    <p class="lead" data-en="I study Biomedical Engineering at the University of Deusto and work as an intern in its biotechnology lab.">Estudio Ingeniería Biomédica en la Universidad de Deusto y trabajo como becario en su laboratorio de biotecnología.</p>
 
-    <div class="monitor" role="img" aria-label="Electrocardiograma animado">
+    <div class="monitor" role="img" aria-label="Electrocardiograma animado" data-en-aria="Animated electrocardiogram">
       <canvas id="ecg"></canvas>
-      <div class="readout"><span id="bpm">72</span><small>lpm</small></div>
+      <div class="readout"><span id="bpm">72</span><small data-en="bpm">lpm</small></div>
     </div>
 
     <label class="rate" for="rate">
-      Ritmo cardíaco
+      <span data-en="Heart rate">Ritmo cardíaco</span>
       <input type="range" id="rate" min="40" max="180" value="72">
     </label>
   </section>
 
   <section id="sobre-mi">
-    <h2>Sobre mí</h2>
+    <h2 data-en="About me">Sobre mí</h2>
     <div class="cols">
-      <p>Me considero una persona polivalente, apasionada por los retos y motivada por explorar nuevas posibilidades dentro de la ingeniería biomédica. Me entusiasma combinar conocimientos de distintas disciplinas para desarrollar soluciones innovadoras que conecten tecnología y salud, con la ambición de superar los límites actuales y descubrir nuevas formas de mejorar la vida de las personas.. Estoy en el grado de Ingeniería Biomédica desde 2024 y desde septiembre de 2025 colaboro en el laboratorio de biotecnología de mi universidad.</p>
-      <p>Antes de la universidad gané la liga preuniversitaria de debate, algo que me enseñó a estructurar ideas y defenderlas con claridad. Hablo español e inglés con nivel profesional.</p>
-      <p>Fuera del ámbito académico, me gusta dedicar tiempo a desarrollar mi identidad personal a través de diferentes aficiones. Disfruto de la música, especialmente tocando la guitarra, y del deporte, donde el jiu-jitsu brasileño me aporta disciplina, constancia y capacidad de superación. También me apasiona explorar proyectos personales, experimentar con nuevas ideas y desarrollar pequeños proyectos por pura curiosidad e iniciativa propia.</p>
+      <p data-en="I consider myself a versatile person, passionate about challenges and motivated to explore new possibilities within biomedical engineering. I am excited to combine knowledge from different disciplines to develop innovative solutions that connect technology and health, with the ambition of pushing today's limits and discovering new ways to improve people's lives. I have been studying Biomedical Engineering since 2024, and since September 2025 I have worked in my university's biotechnology lab.">Me considero una persona polivalente, apasionada por los retos y motivada por explorar nuevas posibilidades dentro de la ingeniería biomédica. Me entusiasma combinar conocimientos de distintas disciplinas para desarrollar soluciones innovadoras que conecten tecnología y salud, con la ambición de superar los límites actuales y descubrir nuevas formas de mejorar la vida de las personas. Estoy en el grado de Ingeniería Biomédica desde 2024 y desde septiembre de 2025 colaboro en el laboratorio de biotecnología de mi universidad.</p>
+      <p data-en="Before university I won the pre-university debate league, which taught me to structure ideas and defend them clearly. I speak Spanish and English at a professional level.">Antes de la universidad gané la liga preuniversitaria de debate, algo que me enseñó a estructurar ideas y defenderlas con claridad. Hablo español e inglés con nivel profesional.</p>
+      <p data-en="Outside academia, I like to spend time developing my personal identity through different hobbies. I enjoy music, especially playing the guitar, and sport, where Brazilian jiu-jitsu gives me discipline, perseverance and the ability to overcome challenges. I am also passionate about exploring personal projects, experimenting with new ideas and building small projects out of pure curiosity and initiative.">Fuera del ámbito académico, me gusta dedicar tiempo a desarrollar mi identidad personal a través de diferentes aficiones. Disfruto de la música, especialmente tocando la guitarra, y del deporte, donde el jiu-jitsu brasileño me aporta disciplina, constancia y capacidad de superación. También me apasiona explorar proyectos personales, experimentar con nuevas ideas y desarrollar pequeños proyectos por pura curiosidad e iniciativa propia.</p>
     </div>
-    <ul class="tags" aria-label="Aptitudes">
-      <li>Trabajo en equipo</li>
-      <li>Orientación al cliente</li>
-      <li>Adaptación a distintos puestos</li>
-      <li>Comunicación y debate</li>
-      <li>Manipulación de alimentos</li>
-      <li>Inglés profesional</li>
+    <ul class="tags" aria-label="Aptitudes" data-en-aria="Skills">
+      <li data-en="Teamwork">Trabajo en equipo</li>
+      <li data-en="Customer focus">Orientación al cliente</li>
+      <li data-en="Adaptability">Adaptación a distintos puestos</li>
+      <li data-en="Communication and debate">Comunicación y debate</li>
+      <li data-en="Food handling">Manipulación de alimentos</li>
+      <li data-en="Professional English">Inglés profesional</li>
     </ul>
   </section>
 
   <section id="experiencia">
-    <h2>Experiencia</h2>
+    <h2 data-en="Experience">Experiencia</h2>
     <ol class="timeline">
       <li>
-        <time>Sep 2025 – actualidad</time>
-        <h3>Becario en el laboratorio de biotecnología</h3>
+        <time data-en="Sep 2025 – present">Sep 2025 – actualidad</time>
+        <h3 data-en="Intern, biotechnology lab">Becario en el laboratorio de biotecnología</h3>
         <p class="where">Universidad de Deusto</p>
-        <p><!-- TODO: añade aquí qué haces en el laboratorio (técnicas, equipos, proyectos). --></p>
+        <p><!-- TODO: añade aquí qué haces en el laboratorio (y su versión en inglés en data-en). --></p>
       </li>
       <li>
-        <time>Julio 2026</time>
-        <h3>Atención VIP en eventos</h3>
+        <time data-en="July 2026">Julio 2026</time>
+        <h3 data-en="VIP guest service at events">Atención VIP en eventos</h3>
         <p class="where">Mouro Producciones, Santander</p>
-        <p>Preparación y servicio de comida en la zona VIP de eventos como el Hoky Music y el concierto de Dani Martín, además de mantener el espacio ordenado. En la última jornada pasé a la barra central. Una experiencia de mucha afluencia que reforzó mi trabajo en equipo y mi capacidad de adaptación.</p>
+        <p data-en="Preparing and serving food in the VIP area at events such as Hoky Music and the Dani Martín concert, and keeping the space tidy. On the last day I moved to the main bar. A high-attendance experience that strengthened my teamwork and adaptability.">Preparación y servicio de comida en la zona VIP de eventos como el Hoky Music y el concierto de Dani Martín, además de mantener el espacio ordenado. En la última jornada pasé a la barra central. Una experiencia de mucha afluencia que reforzó mi trabajo en equipo y mi capacidad de adaptación.</p>
       </li>
     </ol>
   </section>
 
   <section id="formacion">
-    <h2>Formación</h2>
+    <h2 data-en="Education">Formación</h2>
     <dl class="edu">
-      <dt>Grado en Ingeniería Biomédica</dt>
-      <dd>Universidad de Deusto · desde septiembre de 2024</dd>
-      <dt>Bachillerato científico</dt>
-      <dd>CE Castroverde · hasta julio de 2024</dd>
-      <dt>Sexto de primaria</dt>
+      <dt data-en="BSc in Biomedical Engineering">Grado en Ingeniería Biomédica</dt>
+      <dd data-en="University of Deusto · since September 2024">Universidad de Deusto · desde septiembre de 2024</dd>
+      <dt data-en="Science Baccalaureate">Bachillerato científico</dt>
+      <dd data-en="CE Castroverde · until July 2024">CE Castroverde · hasta julio de 2024</dd>
+      <dt data-en="Year 6 (primary school)">Sexto de primaria</dt>
       <dd>Brockhurst and Marlston House School · 2017–2018</dd>
     </dl>
   </section>
 
   <section id="proyectos">
-    <h2>Proyectos</h2>
-    <p class="note">Sustituye estos tres huecos por tus proyectos reales y enlaza cada uno a su repositorio.</p>
+    <h2 data-en="Projects">Proyectos</h2>
+    <p class="note" data-en="Replace these placeholders with your real projects and link each to its repository.">Sustituye estos huecos por tus proyectos reales y enlaza cada uno a su repositorio.</p>
     <ul class="projects">
       <li>
-        <h3>Proyecto de laboratorio</h3>
-        <p>Describe el problema, el método y el resultado en dos frases.</p>
-        <a href="https://github.com/">Ver repositorio</a>
+        <h3 data-en="Lab project">Proyecto de laboratorio</h3>
+        <p data-en="Describe the problem, the method and the result in two sentences.">Describe el problema, el método y el resultado en dos frases.</p>
+        <a href="https://github.com/" data-en="View repository">Ver repositorio</a>
       </li>
       <li>
-        <h3>Proyecto de grado</h3>
-        <p>Un trabajo de clase del que estés orgulloso.</p>
-        <a href="https://github.com/">Ver repositorio</a>
+        <h3 data-en="Degree project">Proyecto de grado</h3>
+        <p data-en="A piece of coursework you are proud of.">Un trabajo de clase del que estés orgulloso.</p>
+        <a href="https://github.com/" data-en="View repository">Ver repositorio</a>
       </li>
     </ul>
   </section>
 
   <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Estoy en Bilbao y abierto a prácticas, colaboraciones y proyectos.</p>
+    <h2 data-en="Contact">Contacto</h2>
+    <p data-en="I am based in Bilbao and open to internships, collaborations and projects.">Estoy en Bilbao y abierto a prácticas, colaboraciones y proyectos.</p>
     <p class="links">
       <a href="mailto:pablotocagutierrez@gmail.com">pablotocagutierrez@gmail.com</a>
       <a href="https://www.linkedin.com/in/pablo-toca-guti%C3%A9rrez-6119903b3/" target="_blank" rel="noopener">LinkedIn</a>
