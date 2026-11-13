@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pablo Toca Gutiérrez · Ingeniería Biomédica</title>
+  <meta name="description" content="Portfolio de Pablo Toca Gutiérrez, estudiante de Ingeniería Biomédica en la Universidad de Deusto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#inicio">Pablo Toca</a>
+  <nav aria-label="Principal">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#formacion">Formación</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <h1>Pablo Toca Gutiérrez</h1>
+    <p class="lead">Estudio Ingeniería Biomédica en la Universidad de Deusto y trabajo como becario en su laboratorio de biotecnología.</p>
+
+    <div class="monitor" role="img" aria-label="Electrocardiograma animado">
+      <canvas id="ecg"></canvas>
+      <div class="readout"><span id="bpm">72</span><small>lpm</small></div>
+    </div>
+
+    <label class="rate" for="rate">
+      Ritmo cardíaco
+      <input type="range" id="rate" min="40" max="180" value="72">
+    </label>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <div class="cols">
+      <p>Me interesa el punto donde la ingeniería se encuentra con el cuerpo humano: dispositivos, señales biológicas y biotecnología. Estoy en el grado de Ingeniería Biomédica desde 2024 y desde septiembre de 2025 colaboro en el laboratorio de biotecnología de mi universidad.</p>
+      <p>Antes de la universidad gané la liga preuniversitaria de debate, algo que me enseñó a estructurar ideas y defenderlas con claridad. Hablo español e inglés con nivel profesional.</p>
+    </div>
+    <ul class="tags" aria-label="Aptitudes">
+      <li>Trabajo en equipo</li>
+      <li>Orientación al cliente</li>
+      <li>Adaptación a distintos puestos</li>
+      <li>Comunicación y debate</li>
+      <li>Manipulación de alimentos</li>
+      <li>Inglés profesional</li>
+    </ul>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiencia</h2>
+    <ol class="timeline">
+      <li>
+        <time>Sep 2025 – actualidad</time>
+        <h3>Becario en el laboratorio de biotecnología</h3>
+        <p class="where">Universidad de Deusto</p>
+        <p><!-- TODO: añade aquí qué haces en el laboratorio (técnicas, equipos, proyectos). --></p>
+      </li>
+      <li>
+        <time>Julio 2026</time>
+        <h3>Atención VIP en eventos</h3>
+        <p class="where">Mouro Producciones, Santander</p>
+        <p>Preparación y servicio de comida en la zona VIP de eventos como el Hoky Music y el concierto de Dani Martín, además de mantener el espacio ordenado. En la última jornada pasé a la barra central. Una experiencia de mucha afluencia que reforzó mi trabajo en equipo y mi capacidad de adaptación.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="formacion">
+    <h2>Formación</h2>
+    <dl class="edu">
+      <dt>Grado en Ingeniería Biomédica</dt>
+      <dd>Universidad de Deusto · desde septiembre de 2024</dd>
+      <dt>Bachillerato científico</dt>
+      <dd>CE Castroverde · hasta julio de 2024</dd>
+      <dt>Sexto de primaria</dt>
+      <dd>Brockhurst and Marlston House School · 2017–2018</dd>
+    </dl>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <p class="note">Sustituye estos tres huecos por tus proyectos reales y enlaza cada uno a su repositorio.</p>
+    <ul class="projects">
+      <li>
+        <h3>Proyecto de laboratorio</h3>
+        <p>Describe el problema, el método y el resultado en dos frases.</p>
+        <a href="https://github.com/">Ver repositorio</a>
+      </li>
+      <li>
+        <h3>Análisis de señales biomédicas</h3>
+        <p>Por ejemplo: procesado de un ECG o EMG con Python.</p>
+        <a href="https://github.com/">Ver repositorio</a>
+      </li>
+      <li>
+        <h3>Proyecto de grado</h3>
+        <p>Un trabajo de clase del que estés orgulloso.</p>
+        <a href="https://github.com/">Ver repositorio</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Estoy en Bilbao y abierto a prácticas, colaboraciones y proyectos.</p>
+    <p class="links">
+      <a href="mailto:pablotocagutierrez@gmail.com">pablotocagutierrez@gmail.com</a>
+      <a href="https://www.linkedin.com/in/pablo-tocagutiérrez-6119903b3" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </section>
+</main>
+
+<footer>Pablo Toca Gutiérrez · Bilbao</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
