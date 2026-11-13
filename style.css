@@ -87,7 +87,7 @@ h1 {
 .rate input { width: min(22rem, 100%); accent-color: var(--trace); }
 
 /* Sobre mí */
-.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.5rem 2.5rem; max-width: 52rem; }
+.cols { display: grid; grid-template-columns: 1fr; gap: 1.25rem; max-width: 44rem; }
 .tags { display: flex; flex-wrap: wrap; gap: .6rem; list-style: none; padding: 0; margin-top: 2rem; }
 .tags li {
   font-family: var(--display); font-size: .92rem; font-weight: 700;
